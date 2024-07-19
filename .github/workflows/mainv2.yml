@@ -1,10 +1,11 @@
 name: SnapEnhanceModGen Schedule
 
 on:
-    push:
-      paths:
-        - 'push-here-v2.md'
-
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+  
 jobs:
   build:
     runs-on: ubuntu-latest
